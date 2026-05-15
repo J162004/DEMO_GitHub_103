@@ -1,0 +1,2 @@
+write a program demonstrating how to set up a crud application using spring framework and hibernate ORM with annotation for entity mapping and dependency injection for employee management application and perform following operations only    a:delete data in the employee table
+

@@ -1,0 +1,11 @@
+OrderID,OrderDate,Region,Category,Product,Sales,Profit,Quantity
+3001,2024-02-01,West,Electronics,Laptop,65000,8000,2
+3002,2024-02-03,East,Furniture,Chair,5000,,5
+3003,2024-02-05,South,Stationery,Notebook,500,120,
+3004,2024-02-07,North,Electronics,Smartphone,30000,5000,3
+3004,2024-02-07,North,Electronics,Smartphone,30000,5000,3
+3005,2024-02-10,West,Stationery,Pen,,60,50
+3006,2024-02-12,East,Electronics,Tablet,22000,3500,2
+3007,2024-02-15,South,Furniture,Table,15000,2500,1
+3008,2024-02-18,North,Electronics,Headphones,2500,400,4
+3009,2024-02-20,West,Furniture,Sofa,45000,6000,1

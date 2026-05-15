@@ -1,0 +1,42 @@
+2026-05-13 11:18:10.522 org.sleuthkit.autopsy.centralrepository.datamodel.RdbmsCentralRepo upgradeSchema
+INFO: Central Repository is up to date
+2026-05-13 11:18:10.533 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Starting local Solr SOLR8 server
+2026-05-13 11:18:10.535 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2026-05-13 11:18:10.535 org.sleuthkit.autopsy.keywordsearch.Server startLocalSolr
+INFO: Local Solr SOLR8 server is already running
+2026-05-13 11:18:10.537 org.sleuthkit.autopsy.keywordsearch.Server isLocalSolrRunning
+INFO: Solr server is running
+2026-05-13 11:18:10.588 org.sleuthkit.autopsy.keywordsearch.Server$Collection <init>
+INFO: Using Solr document queue size = 30
+2026-05-13 11:18:10.605 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB setPragmas
+INFO: sqlite-jdbc version 3.49.1.0 loaded in native mode
+2026-05-13 11:18:10.609 org.sleuthkit.autopsy.progress.LoggingProgressIndicator progress
+INFO: Retrieving images for case: autopsy.db...
+2026-05-13 11:18:10.609 org.sleuthkit.autopsy.casemodule.Case openAsCurrentCase
+INFO: Opened MobileForensics (mobileforensics_20260513_104341) in C:\Users\admin\Desktop\MobileForensics as the current case
+2026-05-13 11:18:10.621 org.sleuthkit.autopsy.ingest.IngestMonitor$MonitorTimerAction logMonitoredRootDirectory
+INFO: Monitoring disk space of C:\
+2026-05-13 11:21:42.975 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Stopping Solr 8 server
+2026-05-13 11:21:42.975 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Setting Solr 8 directory: D:\bmareh\autopsy\solr
+2026-05-13 11:21:42.975 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Running Solr 8 command: [D:\bmareh\autopsy\solr\bin\autopsy-solr.cmd, stop, -k, jjk#09s, -p, 23232] from D:\bmareh\autopsy\solr
+2026-05-13 11:21:42.986 org.sleuthkit.autopsy.keywordsearch.Server runLocalSolr8ControlCommand
+INFO: Finished running Solr 8 command
+2026-05-13 11:21:42.986 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Waiting for Solr server to stop
+2026-05-13 11:21:45.724 org.sleuthkit.autopsy.keywordsearch.Server stopLocalSolr
+INFO: Finished stopping Solr server
+2026-05-13 11:21:45.724 org.sleuthkit.autopsy.core.Installer <init>
+INFO: core installer created
+2026-05-13 11:21:45.75 org.sleuthkit.autopsy.casemodule.Case closeCurrentCase
+INFO: Closing current case MobileForensics (mobileforensics_20260513_104341) in C:\Users\admin\Desktop\MobileForensics
+2026-05-13 11:21:47.753 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Shutting down image gallery controller for case MobileForensics (mobileforensics_20260513_104341)
+2026-05-13 11:21:47.753 org.sleuthkit.autopsy.imagegallery.datamodel.DrawableDB close
+INFO: Closing the drawable.db
+2026-05-13 11:21:47.753 org.sleuthkit.autopsy.imagegallery.ImageGalleryController shutDown
+INFO: Completed shut down of image gallery controller for case MobileForensics (mobileforensics_20260513_104341)

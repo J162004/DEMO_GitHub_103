@@ -1,0 +1,49 @@
+package ak;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.nio.charset.StandardCharsets;
+import java.io.PrintStream;
+
+public class akkk {
+
+    public static void main(String[] args) {
+        // Set console to UTF-8 to ensure emojis display correctly
+        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
+
+        String input = "Hello ";
+
+        // --- ENCODING ---
+        List<String> encoded = encodeToUnicode(input);
+        
+        System.out.println("Step 1: Original String");
+        System.out.println(input);
+        
+        System.out.println("\nStep 2: Unicode Representation");
+        System.out.println(encoded);
+
+        // --- DECODING ---
+        String decoded = decodeFromUnicode(encoded);
+        
+        System.out.println("\nStep 3: Decoded back to String");
+        System.out.println(decoded);
+    }
+
+    public static List<String> encodeToUnicode(String text) {
+        List<String> result = new ArrayList<>();
+        // Convert string to a stream of Unicode Code Points
+        text.codePoints().forEach(cp -> result.add(String.format("U+%04X", cp)));
+        return result;
+    }
+
+    public static String decodeFromUnicode(List<String> codes) {
+        StringBuilder sb = new StringBuilder();
+        for (String hex : codes) {
+            // Clean the string and parse hex to integer
+            int cp = Integer.parseInt(hex.replace("U+", ""), 16);
+            // Append as a valid Unicode character
+            sb.appendCodePoint(cp);
+        }
+        return sb.toString();
+    }
+}

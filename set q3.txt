@@ -1,0 +1,30 @@
+package ak;
+
+import java.util.Set;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ak1 {
+
+    public static void main(String[] args) {
+
+        // Create a Set (LinkedHashSet keeps insertion order)
+        Set<Integer> set = new LinkedHashSet<>();
+        set.add(10);
+        set.add(20);
+        set.add(30);
+        set.add(40);
+
+        System.out.println("Original Set: " + set);
+
+        // Convert Set to List
+        List<Integer> list = new ArrayList<>(set);
+
+        // Reverse the List
+        Collections.reverse(list);
+
+        System.out.println("Reversed elements: " + list);
+    }
+}
